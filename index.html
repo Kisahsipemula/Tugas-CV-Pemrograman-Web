@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My CV</title>
+  <!-- Google Fonts: Orbitron & Rajdhani -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+
+  <!-- Canvas untuk animasi partikel jaringan interaktif -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Overlay Grid & Lines Futuristik -->
+  <div class="bg-grid"></div>
+  <div class="scanline"></div>
+
+  <div class="cv-container">
+    <!-- Header / HUD Profil -->
+    <header class="hud-header">
+      <div class="profile-pic-frame">
+        <div class="avatar"></div>
+      </div>
+      <div class="header-info">
+        <h1 class="glitch-text">Gede Mahendra Nanda Udrayana</h1>
+        <p class="typewriter-text"><span id="typewriter"></span><span class="cursor">|</span></p>
+        <div class="status-badge">
+          <span class="dot"></span> SYSTEM ONLINE
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigasi Tab Interaktif -->
+    <nav class="hud-nav">
+      <button class="tab-btn active" onclick="openTab(event, 'about')">[ 01. TENTANG ]</button>
+      <button class="tab-btn" onclick="openTab(event, 'skills')">[ 02. KEAHLIAN ]</button>
+      <button class="tab-btn" onclick="openTab(event, 'experience')">[ 03. PENGALAMAN ]</button>
+    </nav>
+
+    <!-- Konten Tab -->
+    <main class="hud-content">
+      <!-- Section: Tentang -->
+      <section id="about" class="tab-content active">
+        <h2>// RINGKASAN PROFIL</h2>
+        <div class="card">
+          <p>Nama: Gede Mahendra Nanda Udrayana</p> <br>
+          <p>Asal: bali</p> <br>
+          <p>Status: Mahasiswa</p> <br>
+          <p>Institusi: Institut Teknologi Sepuluh Nopember</p> <br>
+          <p>Prodi: Teknik Informatika</p> <br>
+          <p>NRP: 5025251224</p>
+        </div>
+      </section>
+
+      <!-- Section: Keahlian -->
+      <section id="skills" class="tab-content">
+        <h2>// MATRIKS KEAHLIAN</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <span>C</span>
+            <div class="progress-bar"><div class="fill" style="width: 95%;"></div></div>
+          </div>
+          <div class="skill-card">
+            <span>C++</span>
+            <div class="progress-bar"><div class="fill" style="width: 88%;"></div></div>
+          </div>
+          <div class="skill-card">
+            <span>Math</span>
+            <div class="progress-bar"><div class="fill" style="width: 80%;"></div></div>
+          </div>
+          <div class="skill-card">
+            <span>Python</span>
+            <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Pengalaman -->
+      <section id="experience" class="tab-content">
+        <h2>// RIWAYAT PRESTASI</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="date">2026</span>
+            <h3>CP CODEFEST 002</h3>
+            <p>Berhasil menjadi Finalist Pada Kompetisi Tersebut</p> <br>
+            <a href="Cuplikan layar 2026-09-06 185511.png">Klik Disini</a>
+          </div>
+          <div class="timeline-item">
+            <span class="date">2026</span>
+            <h3>PANCASILA dan AI FEST</h3>
+            <p>Berhasil menjadi Finalist pada kompetisi matematika</p> <br>
+            <a href="Cuplikan layar 2026-09-06 185526.png">Klik Disini</a>
+          </div>
+        </div>
+      </section>
+
+  <script src="cv.js"></script>
+</body>
+</html>
